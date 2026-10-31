@@ -14,9 +14,10 @@ Clean Home pins Quran Play on its dock out of the box.
 
 ## Quick start
 
-1. **Prerequisites:** [Tizen Studio CLI](https://developer.tizen.org/development/tizen-studio/download)
-   (provides `tizen` + `sdb`), Node.js, and — to regenerate the athkar audio —
-   [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) + [`ffmpeg`](https://ffmpeg.org/).
+1. **Prerequisites (one-time, by a person):** Tizen Studio (`tizen` + `sdb`), Node.js,
+   `yt-dlp` + `ffmpeg` (for the athkar audio), and Developer Mode enabled on the TV.
+   **Step-by-step help for each is in [`docs/prerequisites.md`](docs/prerequisites.md)** — do
+   these first, then an agent can take over the build/install.
 2. **TV:** enable Developer Mode and point it at this PC (see
    [`docs/clean-home-setup.md`](docs/clean-home-setup.md)).
 3. **App deps + athkar audio:**

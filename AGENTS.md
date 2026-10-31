@@ -13,6 +13,14 @@ app/        Quran Play — a React + TypeScript + Vite app, packaged as a signed
 docs/       TV setup: Developer Mode, signing, install over sdb, home-screen takeover.
 ```
 
+## Before you build: prerequisites
+
+An agent can do the build/sign/install, but some one-time setup needs a person (Tizen Studio
+install, Developer Mode on the TV with the remote, Node/yt-dlp/ffmpeg). Before running any build
+or `sdb` command, check these are in place; if not, walk the user through
+[`docs/prerequisites.md`](docs/prerequisites.md) step by step rather than assuming they exist.
+Confirm the TV is reachable with `sdb connect <TV_IP>:26101` first.
+
 ## The two tasks this repo exists for
 
 1. **Make Clean Home the home screen.** See `docs/clean-home-setup.md`. In short: enable
