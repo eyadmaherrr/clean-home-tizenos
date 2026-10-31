@@ -1,0 +1,32 @@
+{
+  "name": "quran-play",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Quran Play — Samsung Tizen TV web application",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "build:dev": "vite build --mode development",
+    "preview": "vite preview",
+    "data:meta": "node scripts/fetch-meta.mjs",
+    "athkar:audio": "node scripts/fetch-athkar-audio.mjs",
+    "tizen:cert": "node scripts/tizen-cert.mjs",
+    "tizen:package": "node scripts/tizen-package.mjs",
+    "tizen:install": "node scripts/tizen-install.mjs",
+    "tizen:install:emulator": "node scripts/tizen-install.mjs --emulator",
+    "deploy": "npm run build && npm run tizen:package && npm run tizen:install"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.4",
+    "typescript": "5.6.3",
+    "vite": "5.4.11"
+  }
+}

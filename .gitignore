@@ -1,0 +1,31 @@
+# dependencies & build output
+node_modules/
+app/dist/
+app/build-wgt/
+*.tsbuildinfo
+
+# local Tizen signing material — NEVER commit
+.tizen/
+app/.tizen/
+*.p12
+author-signature.xml
+signature1.xml
+
+# local launcher overrides that may hold keys/tokens
+launcher/config.local.js
+
+# bundled third-party recitation audio (regenerate: npm --prefix app run athkar:audio)
+app/public/athkar/*.mp3
+
+# packaging scratch
+launcher/build/
+*.wgt
+
+# misc
+*.log
+.DS_Store
+Thumbs.db
+
+# tizen packaging temp
+launcher/.manifest.tmp
+*.tmp

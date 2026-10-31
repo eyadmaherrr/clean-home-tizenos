@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Tizen TV web application manifest. `version` is filled from package.json by
+     scripts/tizen-package.mjs; edit everything else here. -->
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="QuranPlay1.QuranPlay" package="QuranPlay1" required_version="3.0"/>
+    <tizen:profile name="tv"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <feature name="http://tizen.org/feature/tv.inputdevice"/>
+    <access origin="*" subdomains="true"/>
+    <content src="index.html"/>
+    <icon src="icon.png"/>
+    <name>Quran Play</name>
+    <description>Listen, reflect and reconnect: Quran recitation for Samsung TVs.</description>
+    <!-- Network for Quran text and recitation audio; remote media keys. -->
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:setting screen-orientation="landscape" context-menu="disable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+</widget>
